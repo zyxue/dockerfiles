@@ -1,7 +1,15 @@
-# To build:
+## To pull the image
 
-    docker build -t adam:0.19.0_2.10 .
+    docker pull zyxue/adam:0.19.0_2.10
 
-# To run
+## To build:
 
-    docker run --rm -ti adam:0.19.0_2.10
+    docker build -t zyxue/adam:0.19.0_2.10 .
+
+## To run
+
+    docker run --rm -t zyxue/adam:0.19.0_2.10
+
+## To run interactively
+
+    docker run --rm -t -i zyxue/adam:0.19.0_2.10 /bin/bash
