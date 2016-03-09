@@ -8,11 +8,13 @@ RUN apt-get update && apt-get -y install \
     wget
 
 
-RUN wget http://apache.mirror.gtcomm.net/spark/spark-1.5.2/spark-1.5.2-bin-hadoop2.6.tgz \
+RUN set -x \
+    && wget http://apache.mirror.gtcomm.net/spark/spark-1.5.2/spark-1.5.2-bin-hadoop2.6.tgz \
     && tar zxf spark-1.5.2-bin-hadoop2.6.tgz \
     && rm -rfv spark-1.5.2-bin-hadoop2.6.tgz
 
-RUN wget https://repo1.maven.org/maven2/org/bdgenomics/adam/adam-distribution_2.10/0.19.0/adam-distribution_2.10-0.19.0-bin.tar.gz \
+RUN set -x \
+    && wget https://repo1.maven.org/maven2/org/bdgenomics/adam/adam-distribution_2.10/0.19.0/adam-distribution_2.10-0.19.0-bin.tar.gz \
     && tar zxf adam-distribution_2.10-0.19.0-bin.tar.gz \
     && rm -rfv adam-distribution_2.10-0.19.0-bin.tar.gz
 
