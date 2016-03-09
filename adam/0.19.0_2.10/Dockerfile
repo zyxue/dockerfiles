@@ -1,12 +1,3 @@
-# https://github.com/bigdatagenomics/adam/releases
-# ADAM 0.19.0_2.10
-
-# to build:
-# docker build -t adam:0.19.0_2.10 .
-
-# to run
-# docker run --rm -ti adam:0.19.0_2.10
-
 FROM ubuntu:14.04
 MAINTAINER Zhuyi Xue <alfred532008@gmail.com>
 
