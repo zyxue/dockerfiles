@@ -19,3 +19,5 @@ RUN git clone --recursive https://github.com/dmlc/xgboost \
 
 # needed by import matplotlib.pyplot as plt
 RUN sudo apt-get install -y libglib2.0-0 libsm6 qt4-default
+
+RUN conda install -y seaborn
