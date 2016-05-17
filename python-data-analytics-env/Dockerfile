@@ -21,3 +21,6 @@ RUN git clone --recursive https://github.com/dmlc/xgboost \
 RUN sudo apt-get install -y libglib2.0-0 libsm6 qt4-default
 
 RUN conda install -y seaborn
+
+# https://github.com/benhamner/Metrics/tree/master/Python
+RUN pip install ml_metrics
